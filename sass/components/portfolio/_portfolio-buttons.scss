@@ -1,0 +1,44 @@
+.portfolio-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+  background-color: #F5F4FA3;
+  cursor: pointer;
+
+  display: block;
+  padding: 6px 22px;
+  border-color: transparent;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--primary-white-color);
+    background-color: var(--link-color);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+}
+.portfolio-btn.current {
+  background-color: var(--logo-color);
+  color: var(--primary-white-color);
+  position: relative;
+}
+
+.ul.button {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-btn {
+  display: block;
+  border-radius: 4px;
+}
+.portfolio-button-item:not(:last-child) {
+  margin-right: 8px;
+}
