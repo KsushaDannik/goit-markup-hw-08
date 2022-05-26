@@ -242,11 +242,33 @@ ul {
 
 .future-list {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.future-item {
-  width: calc(25% - 30px);
+@media screen and (max-width: 767px) {
+  .future-item {
+    width: 100%;
+  }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .future-item {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+  .future-item:nth-child(2n+1) {
+    margin-right: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .future-item {
+    flex-basis: calc((100% - 120px) / 4);
+    flex-wrap: nowrap;
+  }
+  .future-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
 .future-item__title {
   font-weight: 700;
   line-height: 1.14;
@@ -256,13 +278,21 @@ ul {
   margin-bottom: 10px;
   font-size: 14px;
 }
+@media screen and (max-width: 767px) {
+  .future-item__title {
+    text-align: center;
+  }
+}
+
 .future-item__text {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-color);
 }
-.future-item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (max-width: 1199px) {
+  .future-item__text {
+    margin-bottom: 30px;
+  }
 }
 
 .fon {
@@ -274,6 +304,10 @@ ul {
   height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;
+}
+
+.fon__item {
+  display: inline-block;
 }
 
 .box {
@@ -330,12 +364,21 @@ ul {
 
 .team {
   background-color: #f5f4fa;
-  max-width: 1600px;
-  margin: 0 auto;
 }
 
 .team-list {
   display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 1199px) {
+  .team-list {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-list {
+    flex-wrap: nowrap;
+  }
 }
 
 .team-caption {
@@ -356,12 +399,37 @@ ul {
   border-radius: 0px 0px 4px 4px;
   background-color: #fff;
 }
-.team-item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (max-width: 767px) {
+  .team-item {
+    width: 100%;
+  }
+  .team-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team-item {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+  .team-item:nth-child(2n-1) {
+    margin-right: 30px;
+  }
+  .team-item:nth-child(-n+2) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-item {
+    flex-basis: calc((100% - 120px) / 4);
+  }
+  .team-item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .team-item__img {
   display: block;
+  margin-bottom: 30px;
 }
 
 .team-item__member {
@@ -392,6 +460,7 @@ ul {
 .our-team-social {
   display: flex;
   justify-content: center;
+  padding-bottom: 24px;
 }
 
 .our-team-social-item:not(:last-child) {
