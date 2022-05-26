@@ -1,4 +1,5 @@
 .hero {
+  width: 100%;
   background-color: var(--background-color);
   padding-top: 200px;
   padding-bottom: 200px;
@@ -10,26 +11,37 @@
     url(../images/hero-bk.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 1600px;
-  margin: 0 auto;
+  background-position: center;
 
   &__title {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--primary-white-color);
-
-    width: 696px;
     margin-top: 0;
-
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    font-weight: 900;
+    letter-spacing: 0.06em;
+
+    @media screen and (max-width: 1199px) {
+      width: 360px;
+      font-size: 26px;
+      line-height: 1.62;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 696px;
+      font-size: 44px;
+      line-height: 1.36;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media screen and (min-width: 320px) and (max-width: 479px) {
+      display: block;
+      width: 290px;
+    }
   }
 
-  &__btn {
+  .hero__btn {
     font-family: Roboto;
     font-weight: 700;
     font-size: 16px;
