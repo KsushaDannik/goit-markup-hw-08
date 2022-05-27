@@ -2,8 +2,6 @@
   background-color: var(--background-color);
   padding-top: 60px;
   padding-bottom: 60px;
-  max-width: 1600px;
-  margin: 0 auto;
 }
 
 .footer-logo {
@@ -16,15 +14,31 @@
   line-height: 1.19;
   color: var(--logo-color);
   text-decoration: none;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 24px;
+    line-height: 1.16;
+  }
 }
 .logo-studio {
   color: var(--logo-studio-color);
 }
 
 .address {
-  display: block;
+  @media screen and (max-width: 1199px) {
+    display: block;
+    margin-bottom: 60px;
+  }
 }
-
+.address-footer {
+  display: block;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+}
 .address-title {
   line-height: 1.71;
   letter-spacing: 0.03em;

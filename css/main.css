@@ -663,8 +663,6 @@ ul {
   background-color: var(--background-color);
   padding-top: 60px;
   padding-bottom: 60px;
-  max-width: 1600px;
-  margin: 0 auto;
 }
 
 .footer-logo {
@@ -677,13 +675,34 @@ ul {
   color: var(--logo-color);
   text-decoration: none;
 }
+@media screen and (max-width: 1199px) {
+  .footer-logo {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+}
 
 .logo-studio {
   color: var(--logo-studio-color);
 }
 
-.address {
+@media screen and (max-width: 1199px) {
+  .address {
+    display: block;
+    margin-bottom: 60px;
+  }
+}
+
+.address-footer {
   display: block;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .address-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 .address-title {
