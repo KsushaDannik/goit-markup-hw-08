@@ -12,7 +12,10 @@
     flex-wrap: nowrap;
   }
 }
-
+.team-item__img {
+  display: block;
+  margin-bottom: 30px;
+}
 .team-caption {
   font-weight: 700;
   font-size: 36px;
@@ -59,11 +62,6 @@
 .team-item__img {
   display: block;
   margin-bottom: 30px;
-}
-
-.team-item__member {
-  padding-top: 30px;
-  padding-bottom: 30px;
 }
 
 .team-item__title {
