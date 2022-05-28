@@ -1,7 +1,17 @@
 .footer-social {
   display: block;
-  margin-left: 70px;
+  @media screen and (max-width: 767px) {
+    display: block;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: block;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
 }
+
 .footer-social-title {
   margin-bottom: 20px;
   display: block;
@@ -14,10 +24,15 @@
   text-transform: uppercase;
 
   color: var(--logo-studio-color);
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .footer-social-list {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-social-item:not(:last-child) {
