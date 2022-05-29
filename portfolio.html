@@ -15,11 +15,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container">
         <nav class="site-nav">
           <a class="logo" href="./index.html"
@@ -62,7 +62,7 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
 
     <main>
       <section class="portfolio">
@@ -89,12 +89,27 @@
             <li class="portfolio-item">
               <a href="" class="portfolio-cards">
                 <div class="project-cards-image">
-                  <img
-                    src="./images/group.jpg"
-                    alt="Группа"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/dpor1x.jpg 1x, ./images/dpor2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tpor_11x.jpg 1x,
+                        ./images/tpor_12x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-min.jpg    1x,
+                        ./images/img@2x-min.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/group.jpg" alt="Группа" />
+                  </picture>
                   <div class="project-cards-active">
                     <p class="project-cards-active-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -113,12 +128,24 @@
             <li class="portfolio-item">
               <a href="" class="portfolio-cards">
                 <div class="project-cards-image">
-                  <img
-                    src="./images/img2.jpg"
-                    alt="Постер"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/dpor21x.jpg 1x, ./images/dpor22x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tpor_21x.jpg 1x,
+                        ./images/tpor_22x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/por21.jpg 1x, ./images/por22.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/img2.jpg" alt="Постер" />
+                  </picture>
                   <div class="project-cards-active">
                     <p class="project-cards-active-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -139,12 +166,24 @@
             <li class="portfolio-item">
               <a href="" class="portfolio-cards">
                 <div class="project-cards-image">
-                  <img
-                    src="./images/img3.jpg"
-                    alt="Еда"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/dpor31x.jpg 1x, ./images/dpor32x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tpor_31x.jpg 1x,
+                        ./images/tpor_32x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/mpor31x.jpg 1x, ./images/mpor32x.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/img3.jpg" alt="Еда" />
+                  </picture>
                   <div class="project-cards-active">
                     <p class="project-cards-active-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -163,12 +202,24 @@
             <li class="portfolio-item">
               <a href="" class="portfolio-cards">
                 <div class="project-cards-image">
-                  <img
-                    src="./images/img4.jpg"
-                    alt="Наушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/dpor41x.jpg 1x, ./images/dpor42x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tpor_41x.jpg 1x,
+                        ./images/tpor_42x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/por41.jpg 1x, ./images/por42.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/img4.jpg" alt="Наушники" />
+                  </picture>
                   <div class="project-cards-active">
                     <p class="project-cards-active-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -187,12 +238,24 @@
             <li class="portfolio-item">
               <a href="" class="portfolio-cards">
                 <div class="project-cards-image">
-                  <img
-                    src="./images/img5.jpg"
-                    alt="Ящики"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/dpor51x.jpg 1x, ./images/dpor52x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tpor_51x.jpg 1x,
+                        ./images/tpor_52x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/por51.jpg 1x, ./images/por52.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/img5.jpg" alt="Ящики" />
+                  </picture>
                   <div class="project-cards-active">
                     <p class="project-cards-active-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -211,12 +274,24 @@
             <li class="portfolio-item">
               <a href="" class="portfolio-cards">
                 <div class="project-cards-image">
-                  <img
-                    src="./images/img6.jpg"
-                    alt="Комп"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/dpor61x.jpg 1x, ./images/dpor62x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tpor_61x.jpg 1x,
+                        ./images/tpor_62x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/por61.jpg 1x, ./images/por62.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/img6.jpg" alt="Комп" />
+                  </picture>
                   <div class="project-cards-active">
                     <p class="project-cards-active-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -237,12 +312,24 @@
             <li class="portfolio-item">
               <a href="" class="portfolio-cards">
                 <div class="project-cards-image">
-                  <img
-                    src="./images/img7.jpg"
-                    alt="Книга"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/dpor71x.jpg 1x, ./images/dpor72x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tpor_71x.jpg 1x,
+                        ./images/tpor_72x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/por71.jpg 1x, ./images/por72.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/img7.jpg" alt="Книга" />
+                  </picture>
                   <div class="project-cards-active">
                     <p class="project-cards-active-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -261,12 +348,24 @@
             <li class="portfolio-item">
               <a href="" class="portfolio-cards">
                 <div class="project-cards-image">
-                  <img
-                    src="./images/img8.jpg"
-                    alt="Бирка"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/dpor81x.jpg 1x, ./images/dpor82x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tpor_81x.jpg 1x,
+                        ./images/tpor_82x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/por81.jpg 1x, ./images/por82.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/img8.jpg" alt="Бирка" />
+                  </picture>
                   <div class="project-cards-active">
                     <p class="project-cards-active-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -285,12 +384,24 @@
             <li class="portfolio-item">
               <a href="" class="portfolio-cards">
                 <div class="project-cards-image">
-                  <img
-                    src="./images/img9.jpg"
-                    alt="Бирка"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/dpor91x.jpg 1x, ./images/dpor92x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tpor_91x.jpg 1x,
+                        ./images/tpor_92x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/por91.jpg 1x, ./images/por92.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/img9.jpg" alt="Бирка" />
+                  </picture>
                   <div class="project-cards-active">
                     <p class="project-cards-active-text">
                       Ресурс предлагает комплексные предложения с разным уровнем
